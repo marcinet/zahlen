@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahlen lernen auf Deutsch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Zahlen lernen auf Deutsch</h1>
+        <p>Leertaste drücken oder ▷ clicken um abzuspielen</p>
+        <div class="range-selectors">
+            <div>
+                <label for="minRange">Min Zahl:</label>
+                <select id="minRange">
+                    <option value="1">1</option>
+                    <option value="10">10</option>
+                    <option value="100">100</option>
+                    <option value="1000">1,000</option>
+                    <option value="10000">10,000</option>
+                    <option value="100000">100,000</option>
+                    <option value="1000000">1,000,000</option>
+                </select>
+            </div>
+            <div>
+                <label for="maxRange">Max Zahl:</label>
+                <select id="maxRange">
+                    <option value="1">1</option>
+                    <option value="10">10</option>
+                    <option value="100">100</option>
+                    <option value="1000">1,000</option>
+                    <option value="10000">10,000</option>
+                    <option value="100000">100,000</option>
+                    <option value="1000000" selected>1,000,000</option>
+                </select>
+            </div>
+        </div>
+        <button id="playButton" class="play-button">▷</button>
+        <div class="input-container">
+            <input type="text" id="numberInput" placeholder="Nummer eingeben">
+            <button id="submitButton">OK</button>
+        </div>
+        <p id="score">Score: 0</p>
+    </div>
+    <div id="fireworks" class="fireworks"></div>
+    <script src="script.js"></script>
+</body>
+</html>
